@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green13"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:paddingLeft="@dimen/abc_action_bar_default_padding_material"
+        android:paddingStart="@dimen/abc_action_bar_default_padding_material"
+        android:paddingRight="@dimen/abc_action_bar_default_padding_material"
+        android:paddingEnd="@dimen/abc_action_bar_default_padding_material"
+        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/widget_home_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/black"
+                tools:text="Stoke City FC"
+                android:layout_weight="1"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:gravity="left|start"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:paddingLeft="@dimen/widget_score_padding"
+                android:paddingRight="@dimen/widget_score_padding"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/widget_home_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="22"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:gravity="left|start"
+                    android:paddingRight="0dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/widget_score_dash"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/widget_away_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="44"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:gravity="right|end" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/widget_time"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".8"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/green01"/>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/widget_away_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/black"
+                tools:text="Granada CF"
+                android:layout_weight="1"
+                android:gravity="right|end"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+    </LinearLayout>
+</FrameLayout>
